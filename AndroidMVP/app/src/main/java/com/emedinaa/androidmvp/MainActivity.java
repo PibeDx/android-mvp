@@ -31,14 +31,11 @@ public class MainActivity extends ActionBarActivity implements OnFragmentListene
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-
         return false;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         return false;
     }
 

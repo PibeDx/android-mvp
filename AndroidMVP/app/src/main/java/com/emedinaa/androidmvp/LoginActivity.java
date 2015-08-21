@@ -43,10 +43,8 @@ public class LoginActivity extends ActionBarActivity  implements LoginView{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        initiateUI();
-        events();
         loginPresenter= new LoginPresenter(this);
-
+        initiateUI();
     }
 
     private void initiateUI() {
@@ -64,8 +62,7 @@ public class LoginActivity extends ActionBarActivity  implements LoginView{
             @Override
             public void onClick(View view) {
 
-                if(validate())
-                {
+                if (validate()) {
                     login();
                 }
             }
@@ -108,12 +105,6 @@ public class LoginActivity extends ActionBarActivity  implements LoginView{
         loginPresenter.login(username,password);
     }
 
-    private void gotoHome() {
-       startActivity(new Intent(this,MainActivity.class));
-       finish();
-    }
-
-
     @Override
     public void showLoading(boolean state) {
         int visibility= (state)?(View.VISIBLE):(View.GONE);
@@ -131,6 +122,11 @@ public class LoginActivity extends ActionBarActivity  implements LoginView{
     public void onRequestError(Object object) {
         showLoading(false);
         //TODO mostrar mensaje de Error
+    }
+    
+    private void gotoHome() {
+        startActivity(new Intent(this,MainActivity.class));
+        finish();
     }
 
     @Override

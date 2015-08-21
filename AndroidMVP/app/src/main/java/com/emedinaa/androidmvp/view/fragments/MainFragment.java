@@ -95,7 +95,6 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         tviUsername= (TextView)getView().findViewById(R.id.tviUsername);
-
         tviUsername.setText("Bienvenido "+"");
     }
 
