@@ -26,19 +26,19 @@
             android:id="@+id/etePassword"
             android:layout_below="@+id/editText"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="@string/password"
             android:layout_marginBottom="20dp"/>
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnLogin"
-            android:text="Enviar" />
+            android:text="@string/enviar" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Registrar"
+            android:text="@string/registrar"
             android:id="@+id/tviSignIn"
             android:textSize="18sp"
             android:autoLink="none"

@@ -1,4 +1,4 @@
-package com.emedinaa.androidmvp.view.fragments;
+package com.emedinaa.login.view.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.emedinaa.androidmvp.R;
-import com.emedinaa.androidmvp.view.listeners.OnFragmentListener;
+import com.emedinaa.login.R;
+import com.emedinaa.login.view.listeners.OnFragmentListener;
 
 
 /**
@@ -95,20 +95,9 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         tviUsername= (TextView)getView().findViewById(R.id.tviUsername);
-
-        tviUsername.setText("Bienvenido "+"");
+        tviUsername.setText(getString(R.string.bienvenido)+"");
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p/>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
 
 
 }

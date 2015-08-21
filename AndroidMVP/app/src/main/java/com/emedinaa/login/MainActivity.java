@@ -1,4 +1,4 @@
-package com.emedinaa.androidmvp;
+package com.emedinaa.login;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
@@ -9,8 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.emedinaa.androidmvp.view.fragments.MainFragment;
-import com.emedinaa.androidmvp.view.listeners.OnFragmentListener;
+import com.emedinaa.login.view.fragments.MainFragment;
+import com.emedinaa.login.view.listeners.OnFragmentListener;
 
 
 public class MainActivity extends ActionBarActivity implements OnFragmentListener {
@@ -31,18 +31,12 @@ public class MainActivity extends ActionBarActivity implements OnFragmentListene
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
 
         return false;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
-
         return false;
     }
 

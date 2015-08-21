@@ -1,4 +1,4 @@
-package com.emedinaa.androidmvp.model.entity.response;
+package com.emedinaa.login.model.entity.response;
 
 import java.io.Serializable;
 

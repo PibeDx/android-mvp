@@ -1,4 +1,4 @@
-package com.emedinaa.androidmvp;
+package com.emedinaa.login;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
